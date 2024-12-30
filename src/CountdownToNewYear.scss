@@ -1,0 +1,42 @@
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: red;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    .new-year-message{
+        color: whitesmoke;
+        font-size: 2.5rem;
+    }
+  
+    .countdown-item {
+      margin: 10px;
+      text-align: center;
+  
+      .countdown-label {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+      }
+  
+      .countdown-value {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .countdown-container {
+      flex-direction: column;
+    }
+  
+    .countdown-item {
+      margin: 15px 0;
+    }
+  }
+  
